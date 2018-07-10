@@ -29,10 +29,11 @@
                         <asp:TextBox ID="txtSite" runat="server" Width="246px"></asp:TextBox>
                     </td>
                     <td class="auto-style2">
-                        <asp:TextBox ID="txtEndereco" runat="server" Width="201px"></asp:TextBox>
+                        <asp:TextBox ID="txtEndereco" runat="server" Width="206px"></asp:TextBox>
                     </td>
                     <td>
                         <asp:Button ID="btnInserir" runat="server" Text="Inserir Site" OnClick="btnInserir_Click" />
+                        <asp:Button ID="btnSelecionar" runat="server" OnClick="btnSelecionar_Click" Text="Teste" />
                     </td>
                 </tr>
                 <tr>
@@ -42,7 +43,9 @@
                             <asp:ListItem Value="2">Make Indie Games</asp:ListItem>
                         </asp:DropDownList>
                     </td>
-                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style2">
+                        <asp:ListBox ID="lstEndereco" runat="server" Width="216px"></asp:ListBox>
+                    </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
