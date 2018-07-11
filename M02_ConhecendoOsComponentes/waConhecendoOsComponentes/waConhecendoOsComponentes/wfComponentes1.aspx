@@ -33,19 +33,17 @@
                     </td>
                     <td>
                         <asp:Button ID="btnInserir" runat="server" Text="Inserir Site" OnClick="btnInserir_Click" />
-                        <asp:Button ID="btnSelecionar" runat="server" OnClick="btnSelecionar_Click" Text="Teste" />
+                        <asp:Button ID="btnSelecionar" runat="server" OnClick="btnSelecionar_Click" Text="Selecionar Site" />
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style3">
-                        <asp:DropDownList ID="ddlSite" runat="server" Height="16px" Width="250px">
-                            <asp:ListItem Value="1">DFilitto</asp:ListItem>
-                            <asp:ListItem Value="2">Make Indie Games</asp:ListItem>
+                        <asp:ListBox ID="lstEndereco" runat="server" Width="254px" SelectionMode="Multiple"></asp:ListBox>
+                        <asp:DropDownList ID="ddlSite" runat="server" Height="16px" Width="253px">
                         </asp:DropDownList>
                     </td>
                     <td class="auto-style2">
-                        <asp:ListBox ID="lstEndereco" runat="server" Width="216px"></asp:ListBox>
-                    </td>
+                        &nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
