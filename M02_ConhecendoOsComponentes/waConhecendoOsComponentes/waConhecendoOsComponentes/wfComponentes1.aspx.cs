@@ -30,6 +30,19 @@ namespace waConhecendoOsComponentes
             for (int itemSelecionado = 0; itemSelecionado < lstEndereco.Items.Count; itemSelecionado++)
             {
                 listaItems = lstEndereco.Items[itemSelecionado];
+                if (listaItems.Selected)
+                {
+                    listaItems.Selected = false;
+                    ddlSite.Items.Add(listaItems);
+                }
+            }
+            foreach (ListItem listaDeItem in lstEndereco.Items)
+            {
+                if(listaDeItem.Selected)
+                {
+                    listaDeItem.Selected = false;
+                    ddlSite.Items.Add(listaDeItem);
+                }
             }
         }
     }
