@@ -14,7 +14,7 @@ namespace waConhecendoOsComponentes
             if(!IsPostBack)
             {
                 ListItem li = new ListItem();
-                for (int i = 2; i < 11; i++)
+                for (int i = 1; i < 11; i++)
                 {
                     ddlNumeros.Items.Add(i.ToString());
                 }
@@ -23,28 +23,37 @@ namespace waConhecendoOsComponentes
 
         protected void btnExecutar_Click(object sender, EventArgs e)
         {
-            lblDados.Items.Clear();
+            //lblDados.Items.Clear();
             ListItem numeroDaLista = ddlNumeros.SelectedItem;
             int numeroSelecionado = Convert.ToInt32(numeroDaLista.Value);
             int resultado = 0;
+            //for (int multiplicador = 0; multiplicador < 11; multiplicador++)
+            //{
+            //    resultado = numeroSelecionado * multiplicador;
+            //    lblDados.Items.Add(numeroSelecionado.ToString() 
+            //                        + " X " 
+            //                        + multiplicador.ToString() 
+            //                        + " = "
+            //                        + resultado.ToString()
+            //                        );
+            //}
+            //for (int multiplicador = 0; multiplicador < 11; multiplicador++)
+            //{
+            //    resultado = numeroSelecionado * multiplicador;
+            //    tblDados.Rows[multiplicador].Cells[0].Text = numeroSelecionado.ToString();
+            //    tblDados.Rows[multiplicador].Cells[4].Text = resultado.ToString();
+            //}
+            Table tabela = new Table();
             for (int multiplicador = 0; multiplicador < 11; multiplicador++)
             {
+                TableRow linha = new TableRow();
+                TableCell coluna = new TableCell();
                 resultado = numeroSelecionado * multiplicador;
-                lblDados.Items.Add(numeroSelecionado.ToString() 
-                                    + " X " 
-                                    + multiplicador.ToString() 
-                                    + " = "
-                                    + resultado.ToString()
-                                    );
+                coluna.Text = numeroSelecionado.ToString() + " X " + multiplicador.ToString() + " = " + resultado.ToString();
+                linha.Cells.Add(coluna);
+                tabela.Rows.Add(linha);
             }
-            for (int multiplicador = 0; multiplicador < 11; multiplicador++)
-            {
-                resultado = numeroSelecionado * multiplicador;
-                tblDados.Rows[multiplicador].Cells[0].Text = numeroSelecionado.ToString();
-                tblDados.Rows[multiplicador].Cells[4].Text = resultado.ToString();
-            }
-            
-            
+            PlaceHolder.Controls.Add(tabela);
         }
     }
 }

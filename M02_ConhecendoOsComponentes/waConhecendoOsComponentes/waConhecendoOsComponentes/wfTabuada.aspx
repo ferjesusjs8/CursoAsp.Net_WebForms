@@ -23,7 +23,7 @@
             </p>
 
         </div>
-        <asp:Table ID="tblDados" runat="server" CellPadding="6" CellSpacing="6" BorderStyle="Solid" BorderColor="Gray" GridLines="Both">
+        <asp:Table ID="tblDados" runat="server" CellPadding="6" CellSpacing="6" BorderStyle="Solid" BorderColor="Gray" GridLines="Both" Visible="false">
             <asp:TableRow runat="server">
                 <asp:TableCell runat="server"></asp:TableCell>
                 <asp:TableCell runat="server" BorderStyle="None">x</asp:TableCell>
@@ -102,6 +102,8 @@
                 <asp:TableCell runat="server"></asp:TableCell>
             </asp:TableRow>
         </asp:Table>
+        <asp:PlaceHolder ID="PlaceHolder" runat="server"></asp:PlaceHolder>
+        <br />
     </form>
 </body>
 </html>
