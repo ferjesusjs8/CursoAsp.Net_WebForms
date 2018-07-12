@@ -37,6 +37,13 @@ namespace waConhecendoOsComponentes
                                     + resultado.ToString()
                                     );
             }
+            for (int multiplicador = 0; multiplicador < 11; multiplicador++)
+            {
+                resultado = numeroSelecionado * multiplicador;
+                tblDados.Rows[multiplicador].Cells[0].Text = numeroSelecionado.ToString();
+                tblDados.Rows[multiplicador].Cells[4].Text = resultado.ToString();
+            }
+            
             
         }
     }
