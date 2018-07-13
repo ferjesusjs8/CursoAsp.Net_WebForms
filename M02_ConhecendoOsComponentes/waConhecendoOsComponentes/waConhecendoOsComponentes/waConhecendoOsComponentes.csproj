@@ -71,6 +71,7 @@
     <Content Include="Web.config" />
     <Content Include="wfComponentes1.aspx" />
     <Content Include="wfDiasDeVida.aspx" />
+    <Content Include="wfParOuImparFatorial.aspx" />
     <Content Include="wfTabuada.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -88,6 +89,13 @@
     </Compile>
     <Compile Include="wfDiasDeVida.aspx.designer.cs">
       <DependentUpon>wfDiasDeVida.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfParOuImparFatorial.aspx.cs">
+      <DependentUpon>wfParOuImparFatorial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfParOuImparFatorial.aspx.designer.cs">
+      <DependentUpon>wfParOuImparFatorial.aspx</DependentUpon>
     </Compile>
     <Compile Include="wfTabuada.aspx.cs">
       <DependentUpon>wfTabuada.aspx</DependentUpon>
