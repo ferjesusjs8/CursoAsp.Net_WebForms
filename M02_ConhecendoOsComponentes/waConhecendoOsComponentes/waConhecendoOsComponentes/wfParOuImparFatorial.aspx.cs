@@ -57,5 +57,13 @@ namespace waConhecendoOsComponentes
             }
             lblResp2.Text = resultado.ToString();
         }
+
+        protected void rblSelecao_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            pnlParOuImpar.Visible = false;
+            pnlFatorial.Visible = false;
+            if (rblSelecao.SelectedIndex == 0) pnlParOuImpar.Visible = true;
+            else pnlFatorial.Visible = true;
+        }
     }
 }
