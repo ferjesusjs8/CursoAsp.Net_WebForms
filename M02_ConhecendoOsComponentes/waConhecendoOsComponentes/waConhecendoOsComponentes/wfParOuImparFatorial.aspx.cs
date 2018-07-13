@@ -46,16 +46,27 @@ namespace waConhecendoOsComponentes
             int fatorial = 0;
             int resultado = 1;
             fatorial = Convert.ToInt32(txtValorpn2.Text);
-            if (fatorial <= 1)
-                fatorial = 1;
-            else
+            try
             {
-                for (int numFatorial = 1; numFatorial < fatorial; numFatorial++)
+                if (fatorial < 0)
                 {
-                    resultado += resultado * numFatorial;
+                    lblResp2.Text = "Somente números positivos são permitidos";
+                }
+                if (fatorial <= 1)
+                    fatorial = 1;
+                else
+                {
+                    for (int numFatorial = 1; numFatorial < fatorial; numFatorial++)
+                    {
+                        resultado += resultado * numFatorial;
+                    }
                 }
             }
-            lblResp2.Text = resultado.ToString();
+            catch
+            {
+                lblResp2.Text = "Informe apenas números e números positivos...";
+            }
+            lblResp2.Text = fatorial.ToString() + "! = " + resultado.ToString();
         }
 
         protected void rblSelecao_SelectedIndexChanged(object sender, EventArgs e)
