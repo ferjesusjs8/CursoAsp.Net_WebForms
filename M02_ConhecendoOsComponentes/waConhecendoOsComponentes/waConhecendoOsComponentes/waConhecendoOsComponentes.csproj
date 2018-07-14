@@ -68,8 +68,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Imagens\ad1.jpg" />
+    <Content Include="Imagens\ad2.jpg" />
     <Content Include="Imagens\Curso1.jpg" />
     <Content Include="Imagens\Curso2.jpg" />
+    <Content Include="Propagandas.xml" />
     <Content Include="Web.config" />
     <Content Include="wfComponentes1.aspx" />
     <Content Include="wfCursos.aspx" />

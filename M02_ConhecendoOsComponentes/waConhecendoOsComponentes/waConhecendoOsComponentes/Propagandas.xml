@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<Advertisements xmlns="http://schemas.microsoft.com/AspNet/AdRotator-Schedule-File">
+  <Ad>
+    <ImageUrl>~/Imagens/ad1.jpg</ImageUrl>
+    <NavigateUrl>http://www.dota2.com/international/battlepass/</NavigateUrl>
+    <AlternateText>Dota 2 The International Battle Pass</AlternateText>
+    <Impressions>100</Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/Imagens/ad2.jpg</ImageUrl>
+    <NavigateUrl>https://store.steampowered.com/</NavigateUrl>
+    <AlternateText>Steampowered Web Site</AlternateText>
+    <Impressions>50</Impressions>
+  </Ad>
+</Advertisements>

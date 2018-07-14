@@ -10,6 +10,8 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <asp:AdRotator ID="AdRotator1" runat="server" AdvertisementFile="~/Propagandas.xml" AlternateTextField="Propagandas" Target="_blank" />
+            <br />
             <asp:MultiView ID="MultiView1" runat="server" ActiveViewIndex="0">
                 <asp:View ID="View1" runat="server">
                     <asp:ImageButton ID="ImageButton1" runat="server" AlternateText="DOta 2 Underhollow" DescriptionUrl="Dota 2 Underhollow" Height="500px" ImageUrl="~/Imagens/Curso1.jpg" OnClick="ImageButton1_Click" ToolTip="Clique aqui para saber mais" Width="500px" />
