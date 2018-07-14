@@ -20,11 +20,23 @@
                     <asp:Label ID="Label1" runat="server" Text="Dota 2 Underhollow"></asp:Label>
                     <br />
                     <p>Underhollow é um modo de jogo alternativo do DOTA 2 incluido através do novo compendium International 2018</p>
+                    <p>
+                        <asp:HyperLink ID="HyperLink1" runat="server" EnableTheming="True" NavigateUrl="https://www.google.com/" Target="_blank" ToolTip="Acessa o Google">Pesquise sobre o assunto no Google</asp:HyperLink>
+                    </p>
+                    <p>
+                        <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Voltar</asp:LinkButton>
+                    </p>
                 </asp:View>
                 <asp:View ID="View3" runat="server">
                     <asp:Label ID="Label3" runat="server" Text="Dota 2 Roshan Rampage"></asp:Label>
                     <br />
                     <p>Imagem de um Shadow Fiend completando um rampage, rampage significa derrotar todos os players naquela rodada, fazendo esse rampage dentro do covil do Roshan, Roshan é a criatura Neutra mais forte do game, como se ele fosse um Boss, chefe a ser derrotado, não sendo ele o objetivo principal do game e somente um extra que te da o bonus dos items que ele deixa ao jogador depois que matam ele.</p>
+                    <p>
+                        <asp:HyperLink ID="HyperLink3" runat="server" EnableTheming="True" NavigateUrl="https://www.google.com/" Target="_blank" ToolTip="Acessa o Google">Pesquise sobre o assunto no Google</asp:HyperLink>
+                    </p>
+                    <p>
+                        <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton1_Click">Voltar</asp:LinkButton>
+                    </p>
                 </asp:View>
             </asp:MultiView>
         </div>
