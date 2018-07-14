@@ -13,5 +13,15 @@ namespace waConhecendoOsComponentes
         {
 
         }
+
+        protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+        {
+            MultiView1.ActiveViewIndex = 1;
+        }
+
+        protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
+        {
+            MultiView1.ActiveViewIndex = 2;
+        }
     }
 }
