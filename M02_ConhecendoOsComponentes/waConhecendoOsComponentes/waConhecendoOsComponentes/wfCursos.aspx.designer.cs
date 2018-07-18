@@ -31,6 +31,15 @@ namespace waConhecendoOsComponentes {
         protected global::System.Web.UI.WebControls.AdRotator AdRotator1;
         
         /// <summary>
+        /// Controle Literal1.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal Literal1;
+        
+        /// <summary>
         /// Controle MultiView1.
         /// </summary>
         /// <remarks>

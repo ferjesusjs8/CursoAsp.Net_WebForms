@@ -11,6 +11,9 @@
     <form id="form1" runat="server">
         <div>
             <asp:AdRotator ID="AdRotator1" runat="server" AdvertisementFile="~/Propagandas.xml" AlternateTextField="Propagandas" Target="_blank" />
+        </div>
+        <div>
+            <asp:Literal ID="Literal1" runat="server" Text="&lt;b&gt;AdSenseScript&lt;/b&gt;"></asp:Literal>
             <br />
             <asp:MultiView ID="MultiView1" runat="server" ActiveViewIndex="0">
                 <asp:View ID="View1" runat="server">
