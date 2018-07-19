@@ -74,6 +74,7 @@
     <Content Include="Imagens\Curso2.jpg" />
     <Content Include="Propagandas.xml" />
     <Content Include="Web.config" />
+    <Content Include="wfAlteraTamanhoFonte.aspx" />
     <Content Include="wfBasicoJavaScript.aspx" />
     <Content Include="wfComponentes1.aspx" />
     <Content Include="wfCursos.aspx" />
@@ -84,6 +85,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="wfAlteraTamanhoFonte.aspx.cs">
+      <DependentUpon>wfAlteraTamanhoFonte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfAlteraTamanhoFonte.aspx.designer.cs">
+      <DependentUpon>wfAlteraTamanhoFonte.aspx</DependentUpon>
+    </Compile>
     <Compile Include="wfBasicoJavaScript.aspx.cs">
       <DependentUpon>wfBasicoJavaScript.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
