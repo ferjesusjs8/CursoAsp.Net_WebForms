@@ -18,7 +18,8 @@
         <div>
             <asp:Image ID="Image1" runat="server" ImageUrl="~/Imagens/ad2.jpg" onMouseOver="ExibeMensagem()"/>
             <br />
-            <asp:Button ID="Button1" runat="server" Text="Clique no Botão" />
+            <br />
+            <asp:Button ID="Button1" runat="server" Text="Clique no Botão" Height="27px" Width="620px" />
         </div>
     </form>
 </body>

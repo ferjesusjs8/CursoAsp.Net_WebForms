@@ -11,7 +11,7 @@ namespace waConhecendoOsComponentes
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Button1.Attributes.Add("onClick", "ExibeMensagem()");
+            //Button1.Attributes.Add("onClick", "ExibeMensagem()");
         }
     }
 }
