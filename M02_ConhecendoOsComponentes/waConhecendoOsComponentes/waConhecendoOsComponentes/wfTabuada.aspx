@@ -104,6 +104,8 @@
         </asp:Table>
         <asp:PlaceHolder ID="PlaceHolder" runat="server"></asp:PlaceHolder>
         <br />
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/index.aspx">Home</asp:HyperLink>
+        <br />
     </form>
 </body>
 </html>

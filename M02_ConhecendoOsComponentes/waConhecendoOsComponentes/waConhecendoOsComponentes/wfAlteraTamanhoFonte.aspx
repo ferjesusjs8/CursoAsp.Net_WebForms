@@ -29,8 +29,11 @@
             <br />
             <asp:HyperLink ID="HyperLink2" runat="server" onClick="DecText()">---</asp:HyperLink>
         </div>
-    </form>
     <p id="p1">Exemplo de como aumentar a fonte de um texto parágrafo</p>
     <p id="p2">Texto parágrafo 2</p>
-</body>
+        <p>
+            <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/index.aspx">Home</asp:HyperLink>
+        </p>
+    </form>
+    </body>
 </html>

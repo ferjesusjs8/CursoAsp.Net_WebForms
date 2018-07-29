@@ -18,6 +18,8 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <asp:HyperLink ID="HyperLink1" runat="server">Home</asp:HyperLink>
+            <br />
             <table style="width:100%;">
                 <tr>
                     <th class="auto-style3">Site</th>

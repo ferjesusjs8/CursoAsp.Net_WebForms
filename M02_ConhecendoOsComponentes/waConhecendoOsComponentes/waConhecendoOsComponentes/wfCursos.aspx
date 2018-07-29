@@ -10,6 +10,8 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/index.aspx">Home</asp:HyperLink>
+            <br />
             <asp:AdRotator ID="AdRotator1" runat="server" AdvertisementFile="~/Propagandas.xml" AlternateTextField="Propagandas" Target="_blank" />
         </div>
         <div>

@@ -40,7 +40,7 @@
                 <asp:Label ID="lblResp2" runat="server" Text="Informe Um Número"></asp:Label>
             </asp:Panel>
             <br />
-&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/index.aspx">Home</asp:HyperLink>
         </div>
     </form>
 </body>
