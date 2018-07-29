@@ -10,7 +10,8 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:HyperLink ID="HyperLink1" runat="server">Home</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/index.aspx">Home</asp:HyperLink>
+            <br />
             <br />
             <asp:ImageMap ID="ImageMap1" runat="server" ImageUrl="~/Imagens/Curso1.jpg">
                 <asp:RectangleHotSpot AlternateText="Site Make Games" Bottom="200" NavigateUrl="https://www.google.com/" Right="200" Target="_blank" />
